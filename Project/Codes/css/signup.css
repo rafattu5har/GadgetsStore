@@ -2,14 +2,63 @@ body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: url(../images/gift.jpg) no-repeat;
   background-size: cover;
 }
-.sign{
-  width: 280px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+input[type=text],input[type=password], select {
+  /*width: 100%;*/
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 20%;
+  background-color: lightblue;
   color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(84, 247, 225);
+}
+.h1header{color:black ;
+text-align: center;}
+.regbtn{
+  left: 75%;
+  top: 90%;
+  margin-left: -25%;
+  position: relative;
+}
+
+.default{
+width: 60%;
+left: 50%;
+margin-left: -25%;
+position: relative;
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 25px;
+}
+.header{
+text-align: left;
+margin-left: 40%;
+border-radius: 5px;
+padding: 10px;}
+h1{
+  text-align: center;
 }

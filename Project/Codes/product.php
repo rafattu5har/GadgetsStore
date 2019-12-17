@@ -14,14 +14,12 @@
       <a href="#">Product</a>
       <a href="#">About</a>
       <a href="#">Carts</a>
-
-      
     </div>
-
+    
     <div>
       <p><i>Samsung A50</i></p>
       <p><i>Price: 23000/-</i></p>
-
+      
       <p id="demo" style="display:none">Memory, Storage and SIM: 4GB RAM | 64GB internal memory expandable up to      512GB | Dual SIM (nano+nano) dual-standby (4G+4G)
         Android Pie V9.0 operating system with 2.29 Ghz Exynos 9610 Octa Core Processor
         4000mAH lithium-ion battery with Type-C fast charging | 15W Charger in the box
@@ -29,7 +27,7 @@
         25MP + 5MP + 8MP with F1.7, F2.2 wide Angle and F2.2 with Flash | 25 MP front camers with F2.0</p>
       <button type="button1" onclick="myFunction()">Product Details</button>
       <div class="container">
-        <img src="abd.jpg" alt="Samsung Mobile">
+        <img src="images/abd.jpg" height="120px" width="180px" halt="Samsung Mobile">
       <div class="middle">
         <div class="text">Samsung A50</div>
       </div>

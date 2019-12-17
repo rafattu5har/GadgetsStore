@@ -123,7 +123,6 @@ max-width: 75%;
 width: auto;
 height: auto;
 }
-}
 </style>
 
 </head>
