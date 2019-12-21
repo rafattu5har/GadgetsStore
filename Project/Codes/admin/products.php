@@ -30,7 +30,7 @@ if(isset($_POST['addProduct']))
 
   if(isset($pImage))
   {
-    if(!empty($pName)&&($img_ext=='jpg'||$img_ext=='png'))
+    if(!empty($pName)&&($img_ext=='jpg'||$img_ext=='png'||$img_ext=='jpeg'))
     {
       if(move_uploaded_file($_FILES['pImage']['tmp_name'],'../'.$targetPath)==true)
       {
@@ -87,20 +87,20 @@ if(isset($_POST['addProduct']))
   .row {width: 100%;}
   .text1{width: 20%; float: left; text-align: center;}
   .text2{width: 20%; float: left; text-align: center;}
+  .sm2{width: 30%; float: left;}
   .center1
   {
-    width: 30%;
+    width: 50%;
     float: left;
   }
   .center2
   {
-    width: 30%;
+    width: 50%;
     float: left;
   }
   .box1{ height: 100px;}
   .box2{height: 200px;}
 </style>
-</script>
   <head>
     <meta charset="utf-8">
     <title>Products</title>
@@ -136,7 +136,7 @@ if(isset($_POST['addProduct']))
             echo $valueName->category_name; ?></th>
           <th><?php echo $rowProduct['featured_product']==1?'yes':'no'; ?></th>
           <th><img src="<?php echo "../".$rowProduct['product_image']; ?>" alt="Example" width="60" height="60"></th>
-          <th><a href="<?php echo $rowProduct['id']; ?>">View</a><a href="<?php echo $rowProduct['id']; ?>">Edit</a><br><a href="<?php echo $rowProduct['id']; ?>">Delete</a></th>
+          <th><a href="edit.php?id=<?php echo $rowProduct["id"]; ?>">Edit</a>&nbsp<a href="delete.php?id=<?php echo $rowProduct["id"]; ?>">Delete</a></th>
         </tr>
 
       <?php $i++;} ?>
@@ -144,7 +144,7 @@ if(isset($_POST['addProduct']))
     <?php } ?>
     </div>
 
-    <div class="tbl">
+    <div class="tbl default">
       <h1>Add Products</h1>
       <?php  if($resultCategory->num_rows>0)
       {
@@ -171,7 +171,7 @@ if(isset($_POST['addProduct']))
             <label class="text2">Featured Product</label>
             <input type="checkbox" name="featuredP" value=""><br><br><br>
             <label class="text2">Category</label>
-            <select class="" name="pCat" required>
+            <select class="sm2" name="pCat" required>
               <?php
               while($row=$resultCategory->fetch_assoc()){
               ?>

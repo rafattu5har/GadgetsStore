@@ -48,7 +48,7 @@ if(isset($_SESSION['email'])||isset($_COOKIE['email']))
 <?php
 }
 else {
-  header("Location:login.php");
+  header("Location:index.php");
 }
 
 ?>
