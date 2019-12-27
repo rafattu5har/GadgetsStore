@@ -1,2 +1,2 @@
 # GadgetsStore
-Online Gadget Store using the html, css, js, jquery
+Online Gadget Store using the html, css, js, jquery, php, mysql
