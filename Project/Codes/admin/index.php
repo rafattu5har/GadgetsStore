@@ -24,7 +24,7 @@
 
       if($keep_me_logged==1)
       {
-        setcookie('email',$admin_email,time()+3600*24*30,'/');
+        //setcookie('email',$admin_email,time()+3600*24*30,'/');
       }
 
       header("Location:products.php");
